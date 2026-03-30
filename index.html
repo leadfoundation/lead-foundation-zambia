@@ -1,87 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lead Foundation Zambia</title>
+
+<title>Lead Foundation Zambia | Mental Health, Climate & Governance</title>
+
+<meta name="description" content="Lead Foundation Zambia promotes mental health awareness, climate change resilience, governance, and youth empowerment.">
+<meta name="keywords" content="Lead Foundation Zambia, mental health Zambia, climate change Zambia, governance, youth empowerment, women leadership">
+<meta name="author" content="Lead Foundation Zambia">
+
+<meta property="og:title" content="Lead Foundation Zambia">
+<meta property="og:description" content="Empowering communities through mental health, climate resilience, and governance.">
+<meta property="og:image" content="logo.jpg">
+<meta property="og:type" content="website">
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        color: white;
-        background: url('logo.jpg') no-repeat center center/cover;
-        background-attachment: fixed;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('logo.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
 
-    .overlay {
-        background: rgba(0,0,0,0.7);
-        min-height: 100vh;
-        padding-bottom: 50px;
-    }
+.overlay {
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
 
-    header {
-        text-align: center;
-        padding: 30px;
-        background: rgba(0,0,0,0.6);
-    }
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 40px;
-        color: orange;
-    }
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: orange;
+}
 
-    nav {
-        text-align: center;
-        margin-top: 10px;
-    }
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
 
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    section {
-        padding: 30px;
-        max-width: 900px;
-        margin: auto;
-    }
+section {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
 
-    h2 {
-        color: orange;
-    }
+h2 {
+    color: orange;
+}
 
-    .post {
-        background: rgba(255,255,255,0.1);
-        padding: 15px;
-        margin-top: 10px;
-        border-radius: 10px;
-    }
+.post {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 
-    input, textarea, button {
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 5px;
-    }
-
-    button {
-        background: orange;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: rgba(0,0,0,0.6);
-        margin-top: 30px;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 30px;
+}
 </style>
 </head>
 
@@ -94,39 +90,31 @@
     <p>A Woman Belongs Everywhere</p>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#topics">Topics</a>
-        <a href="#blog">Blog</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Updates</a>
     </nav>
 </header>
 
-<section id="about">
+<section>
     <h2>About Us</h2>
     <p>
-        Lead Foundation Zambia is dedicated to promoting awareness and action in 
-        mental health, climate change resilience, and governance. 
-        Our goal is to empower communities with knowledge and create a sustainable future.
+    Our mission is to create meaningful change by spreading ideas, imparting skills, and fostering community participation.
+
+    Lead Foundation Zambia empowers youth and women with tools, skills and legal knowledge to actively participate in governance and leadership.
+
+    We promote human rights, climate resilience and sustainable development for current and future generations.
     </p>
 </section>
 
-<section id="topics">
-    <h2>Our Focus Areas</h2>
-    <ul>
-        <li>Mental Health Awareness</li>
-        <li>Climate Change Resilience</li>
-        <li>Governance and Leadership</li>
-    </ul>
-</section>
+<section>
+    <h2>Latest Updates</h2>
 
-<section id="blog">
-    <h2>Blog Posts</h2>
+    <div class="post">
+        <h3>Welcome to Lead Foundation Zambia</h3>
+        <p>We are committed to empowering communities and promoting awareness on key issues affecting our society.</p>
+    </div>
 
-    <div id="posts"></div>
-
-    <h3>Add a Post</h3>
-    <input type="text" id="title" placeholder="Post Title">
-    <textarea id="content" placeholder="Write your content here..."></textarea>
-    <button onclick="addPost()">Publish</button>
 </section>
 
 <footer>
@@ -135,27 +123,5 @@
 
 </div>
 
-<script>
-function addPost() {
-    let title = document.getElementById("title").value;
-    let content = document.getElementById("content").value;
-
-    if(title === "" || content === "") {
-        alert("Please fill in all fields");
-        return;
-    }
-
-    let postDiv = document.createElement("div");
-    postDiv.className = "post";
-
-    postDiv.innerHTML = "<h3>" + title + "</h3><p>" + content + "</p>";
-
-    document.getElementById("posts").prepend(postDiv);
-
-    document.getElementById("title").value = "";
-    document.getElementById("content").value = "";
-}
-</script>
-
 </body>
-</html>
+    </html>
